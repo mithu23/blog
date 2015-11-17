@@ -1,3 +1,4 @@
+<div id="page_wrapper">
 <h1> New post </h1>
 
 <%= form_for :post, url: posts_path do |f| %>
@@ -5,15 +6,19 @@
 		<%= f.label :title %> <br>
 		<%= f.text_field :title %>
 	</p>	
-
+<br>
+<br>
 	<p>
 		<%= f.label :body %> <br>
 		<%= f.text_field :body %>
 	</p>	
-
+<br>
+<br>
 	<p>
 		<%= f.submit %>
 	</p>
 
 
 <% end %>
+
+</div>
